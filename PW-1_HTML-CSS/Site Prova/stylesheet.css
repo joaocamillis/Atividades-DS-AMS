@@ -1,0 +1,28 @@
+body{
+    
+    
+      background-color: rgb(167, 179, 247); 
+      text-align: left;
+    
+   
+   
+    
+}
+main{
+    font-size: 30px;
+padding: 50px;
+     
+}
+ 
+
+footer{
+
+background-color: rgb(105, 114, 165);
+padding-bottom: 20px;
+font-size: 40px;
+
+}
+.final{
+
+    text-align: center;
+}

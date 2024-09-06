@@ -1,0 +1,111 @@
+body{
+   font-family: tahoma;
+text-align: center;
+margin: 0;
+
+}
+main{
+background-color: maroon;
+min-width: 100%;
+position: absolute;
+margin-bottom: 0;
+margin-top: 0;
+margin-right: 0;
+min-height: 100%;
+left: 13%;
+
+
+
+
+
+}
+
+aside{
+background-size: cover;
+min-height:100% ;
+width: 30%;
+position: fixed;
+margin-top: 0;
+margin-bottom: 0;
+margin-left: 0;
+background-image: url(Capas/vinho.jpg);
+
+}
+
+h1{
+color: whitesmoke;
+ font-style: italic;
+ border: 4px dotted mistyrose;
+ font-size: 40px;
+ 
+ 
+}
+
+.princ{
+color:whitesmoke;
+background-color: rgba(255, 255, 255, 0.619);
+}
+
+.lat{ background-image: url(Capas/branco.jpg);
+color: maroon;
+}
+
+ul{
+color: lightgray;
+font-size: 10pt;
+font-weight: bold;
+text-align: left;
+line-height: 35px;
+list-style-type: none;
+
+
+
+}
+
+span{
+text-decoration: underline;
+color: gold;
+
+}
+
+table{
+
+    margin:auto;
+    
+}
+
+td{
+border:3px dashed indianred;
+
+
+
+}
+h1:hover{
+
+background-color: Crimson;
+color: lightpink;
+border-color: lightpink;
+
+
+}
+.princ:hover{
+
+color: indianred;
+
+}
+
+td:hover{
+transform: rotate(-5deg);
+border: 5px double gold;
+
+
+
+}
+
+
+
+
+
+
+
+
