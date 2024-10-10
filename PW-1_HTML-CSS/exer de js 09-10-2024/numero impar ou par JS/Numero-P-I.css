@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: violet;
+    margin-top: 8%;
+}
+
+h1{
+    font-size: 3rem;
+    color: blueviolet;
+}
+
+#numero{
+    width: 30%;
+    height: 5vh;
+    border-radius: 10px;
+    border-color: darkorchid;
+}
+
+button{
+    width: 15%;
+    margin-top: 2%;
+    height: 5vh;
+    border-radius: 20px;
+    border-color: blueviolet;
+}
+
+p{
+    font-size: 3rem;
+    color: blueviolet;
+}
