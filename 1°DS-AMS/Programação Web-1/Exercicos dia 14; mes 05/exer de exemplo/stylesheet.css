@@ -1,0 +1,55 @@
+table{
+     
+    
+    width: 50%;
+    border-spacing: 3;
+    padding: 5;
+    background-color: skyblue;
+    border-collapse: collapse;
+    
+  }
+
+body{
+    color: red; 
+   
+}
+
+.ci{
+   
+    background: lightgreen;
+    
+    
+    
+}
+
+
+    
+
+
+
+.ce{
+    background-color:  blue;
+}
+
+
+.pi{
+
+    
+    font-size: 150%;
+    column-span: 3;
+    text-align: center;
+    
+    
+    
+    
+    
+    
+}
+tr{
+    text-align: center;
+}
+
+
+
+    
+    
