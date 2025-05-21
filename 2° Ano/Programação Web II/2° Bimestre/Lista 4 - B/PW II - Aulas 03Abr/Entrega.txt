@@ -1,0 +1,14 @@
+
+Desenvolver: o banco "BD Empresa" (Aula 2 - MyAdmin.pdf)
+
+Entrega: dia 10 de abril
+
+Entregar "dois" arquivos, sendo:
+
+1) o ".sql" exportado
+2) o ".pdf" com os prints:
+--- de cada tabela com as colunas expandidas e visíveis
+--- da tela do relacionamento concluída
+
+
+Observação: Inserir dados diferentes daqueles apresentados na Aula 2 - MyAdmin.pdf

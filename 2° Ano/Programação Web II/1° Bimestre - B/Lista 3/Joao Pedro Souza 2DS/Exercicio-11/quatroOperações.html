@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quatro Operações</title>
+    <link rel="stylesheet" href="quatroOperações.css">
+</head>
+
+<body>
+    <form action="quatroOperações.php" method="POST">
+        <div class="txt">
+        <label for="n1">Digite o primeiro valor:</label> <input type="number" step=".01" name="n1" id="n1"> <br>
+        <label for="n2">Digite o segundo valor:</label>  <input type="number" step=".01" name="n2" id="n2"> <br>
+    </div>
+
+
+    <div class="buttons">
+        <label for="op">Escolha uma operação: </label>
+        <select name="op" id="op">
+            <option value=""></option>
+        <option value="sub" id="sub">Subtração</option>
+        <option value="add" id="add">Adição</option>
+        <option value="mult" id="mult">Multiplicação</option>
+        <option value="div" id="div">Divisão</option>
+        </select>
+       
+        <input type="submit" name="enviar" id="">
+        <input type="reset" name="limpar" id="">
+     </div>
+    </form>
+
+</body>
+
+</html>

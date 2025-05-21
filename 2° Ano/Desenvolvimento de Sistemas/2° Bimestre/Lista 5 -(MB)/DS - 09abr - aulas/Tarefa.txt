@@ -1,0 +1,6 @@
+
+-- Desenvolver o exemplo "Caixa"
+-- Desenvolver o exercício "Calculadora"
+
+entrega: 17 de abril
+

@@ -1,0 +1,16 @@
+Exercício fixação: 
+
+ - Crie um programa em php que defina 4 variáveis:
+ -- uma com o seu primeiro nome,
+ -- uma com o seu sobrenome,
+ -- uma coma a sua idade,
+ --e, uma com a sua data de nascimento.
+
+Apresente na tela estas variáveis acompanhadas do "rótulo" (palavra/frase explicativa). Exemplo:
+
+ Meu nome completo é:  variáveis nome e sobrenome
+ A minha idade é: variável idade
+ E a minha data de nascimento é: variável data de nascimento
+
+
+

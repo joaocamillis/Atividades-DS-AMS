@@ -1,0 +1,19 @@
+		Desenvolver: o banco "BD Escola" (1 - Enunciado BD Escola.pdf)
+
+Entrega: dia 17 de abril
+
+-- Incluir registros:
+----- 10 disciplinas
+----- 04 cursos
+----- 20 alunos
+
+Entregar "dois" arquivos, sendo:
+
+1) o ".sql" exportado
+2) o ".pdf" com os prints:
+--- do banco criado com as tabelas respectivas
+--- de cada tabela com as colunas expandidas e visíveis
+--- da tela do relacionamento concluída
+--- de cada tabela com os dados cadastrados
+
+Obs: Inserir dados (registros) "diferentes" dos apresentados no enunciado

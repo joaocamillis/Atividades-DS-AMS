@@ -1,0 +1,37 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    background-color: rgb(175, 185, 194);
+}
+
+form {
+display: flex;
+flex-direction: column;
+background-color: aqua;
+padding: 100px 200px 100px 200px;
+border-radius: 50px;
+}
+
+input{
+margin: 5%;
+width: 15vw;
+box-shadow: rgb(110, 110, 225) 1px 1px 1px 1px;
+border-radius: 20px;
+height: 25px;
+border-color: transparent;
+background-color: azure;
+
+}
+
+input:hover{
+    scale: 1.1;
+    transition: 1ms;
+    color: rgb(0, 0, 0);
+    border-color: blue;
+    background-color: rgb(127, 207, 219);
+    border-color: transparent;
+    cursor: pointer;
+}
+

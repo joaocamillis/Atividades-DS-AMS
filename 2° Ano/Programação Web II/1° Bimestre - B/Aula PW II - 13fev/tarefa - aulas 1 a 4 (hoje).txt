@@ -1,0 +1,29 @@
+
+Em um arquivo Word:
+
+a1) Código fonte do último exemplo da aula 2
+a2) Print da tela do navegador apresentando a "execução"
+
+b1) Código fonte do exemplo da aula 4 (variáveis)
+b2) Print da tela do navegador apresentando a "execução"
+
+c1) Código fonte do exercício de fixação: "nome + sobrenome"
+c2) Print da tela do navegador apresentando a "execução"
+
+d1) Código fonte do exercício de fixação: "idade"
+d2) Print da tela do navegador apresentando a "execução"
+
+
+
+Converta em "pdf" para entrega.
+
+Entrega 13fev até a hora do intervalo
+
+
+
+
+
+
+
+
+
