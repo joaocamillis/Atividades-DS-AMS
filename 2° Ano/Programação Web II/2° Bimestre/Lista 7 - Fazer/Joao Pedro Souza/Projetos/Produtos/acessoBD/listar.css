@@ -1,0 +1,71 @@
+body{
+    background-color: #D5D5D5;
+    font-family: "Cascadia Code", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+
+
+
+a{
+    color: black;
+    width: 200px;
+}
+
+button{
+
+    color: black;
+    font-size: 17px;
+    width: 10vw;
+    border: grey 1px solid;
+    border-radius: 20px;
+    height: 30px;
+    background-color: #e8e5e5;
+    box-shadow: 1px 1px 10px 5px grey;
+}
+
+button:hover{
+    transform: scale(1.2);
+    background-color: #D5D5D5;
+    transition: 1s;
+    border: grey 1px solid;
+    border-radius: 20px;
+}
+
+table{
+    border-collapse: collapse;
+    border: transparent 1px solid;
+    box-shadow: 10px 10px 10px 10px gray;
+    border-radius: 20px;
+    padding: 10px;
+     
+}
+
+
+th, td {
+    padding: 10px 30px;
+    text-align: center;
+    border-right: 1px solid transparent; 
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+tbody tr {
+    border-bottom: 2px solid #888;
+     
+}
+
+button{
+    cursor: pointer;
+}
+
+
+

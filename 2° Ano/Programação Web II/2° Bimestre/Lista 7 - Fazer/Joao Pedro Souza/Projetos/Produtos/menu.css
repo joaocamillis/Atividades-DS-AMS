@@ -1,0 +1,87 @@
+
+
+
+body{
+    background-color: #D5D5D5;
+    font-family: "Cascadia Code", sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px black solid;
+    background-color: #9099A2;
+    box-shadow: 1px 1px 20px 1px;
+}
+
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+
+.tudo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-left: 40px;
+    padding-top: 40px;
+}
+
+a{
+    color: #000000;
+}
+
+h5{
+    font-size: 1vw;
+    color: rgb(60, 56, 56);
+}
+
+p{
+    color: rgb(60, 56, 56);
+}
+
+.cate{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.td{
+    border: 2px rgb(85, 82, 83) solid;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #96858F;
+    box-shadow: 1px 1px 10px 1px;
+}
+
+.td:hover{
+    transform: scale(1.2);
+}
+
+button{
+    background-color: transparent;
+    border: transparent solid 1px;
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}

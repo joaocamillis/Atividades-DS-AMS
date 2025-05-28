@@ -8,7 +8,7 @@ import javax.swing.*;
  * @author dti
  */
 public class DadosPrincipal {
-    private DadosPessoais dados = new DadosPessoais();
+    DadosPessoais dados = new DadosPessoais();
     public static void main(String[] args) {
         new DadosPrincipal();
     }

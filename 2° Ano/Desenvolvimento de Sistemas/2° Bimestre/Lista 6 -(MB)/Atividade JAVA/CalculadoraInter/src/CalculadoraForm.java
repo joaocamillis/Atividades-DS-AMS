@@ -1,7 +1,5 @@
-import java.text.*;
 import java.awt.*;
 import java.awt.event.*;
-import javax.swing.text.*;
 import javax.swing.*;
 
 public class CalculadoraForm extends JFrame {

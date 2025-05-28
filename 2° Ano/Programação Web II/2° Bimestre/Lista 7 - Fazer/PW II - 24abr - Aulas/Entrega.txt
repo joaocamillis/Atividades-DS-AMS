@@ -1,0 +1,18 @@
+
+ - data da entrega: 15 de maio
+
+ - Através do menu de opções, executar a opção "Listar Produtos" e apresentar "todos os produtos" cadastrados na tabela.
+
+ - Entregar compactada a pasta "Projeto" inteira com as subpastas "produto" e "escola", com os arquivos abaixo listados:
+
+-- subpasta Produto:
+--------- código do banco
+--------- menu de opçoes
+--------- classe de conexão
+--------- classe de modelagem
+--------- formulário "Listar"
+
+-- subpasta Escola:
+--------- código do banco
+--------- menu de opçoes
+--------- classe de conexão

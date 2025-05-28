@@ -1,0 +1,15 @@
+
+DATA LIMITE PARA (RE)ENTREGA DAS TAREFAS REFERENTES AO 2º BIMESTRE: 25 DE JUNHO (QUARTAFEIRA) 
+
+
+	09/abr ==> lista 5 ==> delete
+	23/abr ==> lista 6 ==> update
+	14/mai ==> lista 7 ==> MER: motorista // cliente // emprest livro (slide 18 - aula 7)
+	28/mai ==> lista 8 ==> Mer: 5 enunciados (slide 19 - aula 7)
+
+
+OBSERVAÇÃO: Entregas somente presencial e na respectiva aula!
+
+
+
+
