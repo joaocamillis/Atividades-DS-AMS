@@ -6,7 +6,7 @@ Projeto Android desenvolvido em Kotlin utilizando Jetpack Compose para demonstra
 
 Abaixo, a visualização da interface principal do aplicativo:
 
-![Interface do Aplicativo](imgs/img_app.jpg)
+![Interface do Aplicativo](imgs/img_app.png)
 
 ---
 
