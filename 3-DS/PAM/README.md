@@ -14,7 +14,7 @@ Abaixo, a visualização da interface principal do aplicativo:
 
 O print abaixo demonstra a captura dos eventos no console do Android Studio, evidenciando as diferentes prioridades de log configuradas para cada menção:
 
-![Captura do Logcat](imgs/img_logcat.jpg)
+![Captura do Logcat](imgs/img_log.jpg)
 
 ---
 
