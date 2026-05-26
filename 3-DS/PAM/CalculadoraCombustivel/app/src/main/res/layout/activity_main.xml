@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7FB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculadora de Combustível"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#0D47A1"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcule o custo da viagem e salve o histórico no SQLite"
+            android:textSize="15sp"
+            android:textColor="#555555"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/inputDistancia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Distância da viagem em km"
+            android:inputType="numberDecimal"
+            android:backgroundTint="#1976D2"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/inputConsumo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Consumo do veículo em km/L"
+            android:inputType="numberDecimal"
+            android:backgroundTint="#1976D2"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/inputPreco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Preço do combustível por litro"
+            android:inputType="numberDecimal"
+            android:backgroundTint="#1976D2"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/buttonCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular e Salvar"
+            android:backgroundTint="#1565C0"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/buttonLimpar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Limpar Histórico"
+            android:backgroundTint="#B71C1C"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#0D47A1"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado aparecerá aqui"
+            android:textSize="17sp"
+            android:textColor="#222222"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Histórico salvo no SQLite"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#0D47A1"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textHistorico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nenhum cálculo salvo ainda."
+            android:textSize="15sp"
+            android:textColor="#222222"
+            android:background="#FFFFFF"
+            android:padding="16dp" />
+
+    </LinearLayout>
+
+</ScrollView>
