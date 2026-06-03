@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7FB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastro"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#0D47A1"
+            android:gravity="center"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crie sua conta para usar o app"
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <EditText
+            android:id="@+id/inputNomeCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome"
+            android:inputType="textPersonName"
+            android:backgroundTint="#1976D2"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/inputEmailCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="#1976D2"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/inputSenhaCadastro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:backgroundTint="#1976D2"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/buttonCadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar"
+            android:backgroundTint="#1565C0"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/buttonVoltarLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Voltar para Login"
+            android:backgroundTint="#B71C1C"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</ScrollView>

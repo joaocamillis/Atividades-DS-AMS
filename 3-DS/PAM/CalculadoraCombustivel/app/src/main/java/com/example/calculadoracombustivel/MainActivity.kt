@@ -128,4 +128,5 @@ class MainActivity : AppCompatActivity() {
 
         textHistorico.text = historico.toString()
     }
+
 }

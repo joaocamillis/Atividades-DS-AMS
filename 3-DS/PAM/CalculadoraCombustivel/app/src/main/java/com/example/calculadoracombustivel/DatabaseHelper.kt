@@ -14,49 +14,102 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(
 
     companion object {
         private const val DATABASE_NAME = "combustivel.db"
-        private const val DATABASE_VERSION = 1
+        private const val DATABASE_VERSION = 2
 
-        private const val TABLE_NAME = "calculos"
-        private const val COLUMN_ID = "id"
-        private const val COLUMN_DISTANCIA = "distancia"
-        private const val COLUMN_CONSUMO = "consumo"
-        private const val COLUMN_PRECO = "preco"
-        private const val COLUMN_LITROS = "litros"
-        private const val COLUMN_CUSTO = "custo"
+        private const val TABLE_CALCULOS = "calculos"
+        private const val TABLE_USUARIOS = "usuarios"
     }
 
     override fun onCreate(db: SQLiteDatabase) {
-        val createTable = """
-            CREATE TABLE $TABLE_NAME (
-                $COLUMN_ID INTEGER PRIMARY KEY AUTOINCREMENT,
-                $COLUMN_DISTANCIA REAL NOT NULL,
-                $COLUMN_CONSUMO REAL NOT NULL,
-                $COLUMN_PRECO REAL NOT NULL,
-                $COLUMN_LITROS REAL NOT NULL,
-                $COLUMN_CUSTO REAL NOT NULL
+        val criarTabelaCalculos = """
+            CREATE TABLE $TABLE_CALCULOS (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                distancia REAL NOT NULL,
+                consumo REAL NOT NULL,
+                preco REAL NOT NULL,
+                litros REAL NOT NULL,
+                custo REAL NOT NULL
             )
         """.trimIndent()
 
-        db.execSQL(createTable)
+        val criarTabelaUsuarios = """
+            CREATE TABLE $TABLE_USUARIOS (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                nome TEXT NOT NULL,
+                email TEXT NOT NULL UNIQUE,
+                senha TEXT NOT NULL
+            )
+        """.trimIndent()
+
+        db.execSQL(criarTabelaCalculos)
+        db.execSQL(criarTabelaUsuarios)
     }
 
     override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
-        db.execSQL("DROP TABLE IF EXISTS $TABLE_NAME")
+        db.execSQL("DROP TABLE IF EXISTS $TABLE_CALCULOS")
+        db.execSQL("DROP TABLE IF EXISTS $TABLE_USUARIOS")
         onCreate(db)
+    }
+
+    fun cadastrarUsuario(nome: String, email: String, senha: String): Boolean {
+        val db = writableDatabase
+
+        val valores = ContentValues().apply {
+            put("nome", nome)
+            put("email", email)
+            put("senha", senha)
+        }
+
+        val resultado = db.insert(TABLE_USUARIOS, null, valores)
+        db.close()
+
+        return resultado != -1L
+    }
+
+    fun verificarLogin(email: String, senha: String): Boolean {
+        val db = readableDatabase
+
+        val cursor = db.rawQuery(
+            "SELECT * FROM $TABLE_USUARIOS WHERE email = ? AND senha = ?",
+            arrayOf(email, senha)
+        )
+
+        val existeUsuario = cursor.count > 0
+
+        cursor.close()
+        db.close()
+
+        return existeUsuario
+    }
+
+    fun emailJaCadastrado(email: String): Boolean {
+        val db = readableDatabase
+
+        val cursor = db.rawQuery(
+            "SELECT * FROM $TABLE_USUARIOS WHERE email = ?",
+            arrayOf(email)
+        )
+
+        val existe = cursor.count > 0
+
+        cursor.close()
+        db.close()
+
+        return existe
     }
 
     fun salvarCalculo(calculo: CalculoCombustivel): Boolean {
         val db = writableDatabase
 
         val valores = ContentValues().apply {
-            put(COLUMN_DISTANCIA, calculo.distancia)
-            put(COLUMN_CONSUMO, calculo.consumo)
-            put(COLUMN_PRECO, calculo.preco)
-            put(COLUMN_LITROS, calculo.litros)
-            put(COLUMN_CUSTO, calculo.custo)
+            put("distancia", calculo.distancia)
+            put("consumo", calculo.consumo)
+            put("preco", calculo.preco)
+            put("litros", calculo.litros)
+            put("custo", calculo.custo)
         }
 
-        val resultado = db.insert(TABLE_NAME, null, valores)
+        val resultado = db.insert(TABLE_CALCULOS, null, valores)
         db.close()
 
         return resultado != -1L
@@ -67,19 +120,19 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(
         val db = readableDatabase
 
         val cursor = db.rawQuery(
-            "SELECT * FROM $TABLE_NAME ORDER BY $COLUMN_ID DESC",
+            "SELECT * FROM $TABLE_CALCULOS ORDER BY id DESC",
             null
         )
 
         if (cursor.moveToFirst()) {
             do {
                 val calculo = CalculoCombustivel(
-                    id = cursor.getInt(cursor.getColumnIndexOrThrow(COLUMN_ID)),
-                    distancia = cursor.getDouble(cursor.getColumnIndexOrThrow(COLUMN_DISTANCIA)),
-                    consumo = cursor.getDouble(cursor.getColumnIndexOrThrow(COLUMN_CONSUMO)),
-                    preco = cursor.getDouble(cursor.getColumnIndexOrThrow(COLUMN_PRECO)),
-                    litros = cursor.getDouble(cursor.getColumnIndexOrThrow(COLUMN_LITROS)),
-                    custo = cursor.getDouble(cursor.getColumnIndexOrThrow(COLUMN_CUSTO))
+                    id = cursor.getInt(cursor.getColumnIndexOrThrow("id")),
+                    distancia = cursor.getDouble(cursor.getColumnIndexOrThrow("distancia")),
+                    consumo = cursor.getDouble(cursor.getColumnIndexOrThrow("consumo")),
+                    preco = cursor.getDouble(cursor.getColumnIndexOrThrow("preco")),
+                    litros = cursor.getDouble(cursor.getColumnIndexOrThrow("litros")),
+                    custo = cursor.getDouble(cursor.getColumnIndexOrThrow("custo"))
                 )
 
                 lista.add(calculo)
@@ -94,7 +147,7 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(
 
     fun limparHistorico() {
         val db = writableDatabase
-        db.delete(TABLE_NAME, null, null)
+        db.delete(TABLE_CALCULOS, null, null)
         db.close()
     }
 }
