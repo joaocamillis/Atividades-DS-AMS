@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "255372321374",
+    "project_id": "geovista-71696",
+    "storage_bucket": "geovista-71696.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255372321374:android:c802f3d8ed530293c10acf",
+        "android_client_info": {
+          "package_name": "com.joaopedro.geovista"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5v5jSwDTDbQjInKNAhwkuyypN_svVBcA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
