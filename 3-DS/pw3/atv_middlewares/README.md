@@ -23,6 +23,10 @@ Ao acessar a rota `/portal`, o sistema exibe as mensagens:
 - CSS
 
 ---
+### print da execução da aplicação:
+<img src="image/image.png" width="700" alt="Texto alternativo">
+
+
 
 ## 🔄 Funcionamento da aplicação
 
