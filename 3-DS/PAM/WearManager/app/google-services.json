@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "456233168209",
+    "project_id": "wearmanager",
+    "storage_bucket": "wearmanager.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456233168209:android:7c8c8cf198ed47b5f07770",
+        "android_client_info": {
+          "package_name": "com.joaopedro.wearmanager"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtS92kvG6no9ClhySahkKDNIhmSpl-IP8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
